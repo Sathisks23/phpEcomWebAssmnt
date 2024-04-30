@@ -1,0 +1,131 @@
+
+*{
+    font-family:Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+}
+nav {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+nav>input{
+    height: 30px;
+    width: 300px;
+    border-radius: 20px;
+    border:1px solid rgba(128, 128, 128, 0.329);
+    
+}
+
+nav{
+    border-bottom:1px solid rgba(128, 128, 128, 0.527);
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+#name{
+    color: red;
+}
+nav>a{
+    text-decoration: none;
+}
+nav>a>p{
+    color: goldenrod;
+    font-size: 30px;
+}
+
+.links>*{
+    padding:0 10px 0 10px;
+    text-decoration: none;
+    color:rgba(255, 68, 0, 0.685);
+}
+
+#proImage{
+    width: 500px;
+   height: 300px;
+}
+
+#productContainer,#blogContainer{
+    text-align: center;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:500px;
+    padding-bottom: 100px;
+   
+    
+}
+
+#blogContainer>div{
+    width: 500px;
+   padding-left: 100px;
+}
+
+#blogContainer>div>img{
+   width: 100%;
+}
+
+
+.viewProduct{
+    padding-top: 150px;
+    padding-bottom: 100px;
+    width: 50%;
+    margin:0 auto;
+}
+
+.viewProduct>small::before{
+   content: 'Rs.';
+   
+}
+.viewProduct>small{
+    font-size: 14px;
+    color: goldenrod;
+}
+
+.viewblog{
+    width: 70%;
+    margin:150px auto;
+}
+.blog_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog_title{
+    text-align: center;
+}
+
+.Banner{
+    margin-top:50px;
+    padding-left: 100px;
+    
+    height: 100vh;
+    background-image: linear-gradient(goldenrod,gold);
+}
+#banner_topic{
+   color: white;
+   font-size: 40px;
+   padding-top: 200px;
+}
+.Banner>p{
+    font-size: 20px;
+    padding: 15px;
+    line-height: 30px;
+}
+
+.footer{
+   position:static;
+   margin: 0;
+   padding: 20px;
+   bottom:0;
+   background-color: black;
+   left: 0;
+   right: 0;
+   color:rgb(252, 111, 10);
+}
